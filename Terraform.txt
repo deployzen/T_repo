@@ -1,0 +1,41 @@
+============== execute terraform.sh ===============
+      nano terraform.sh --> past terraform.sh file
+      chmod u=x terraform.sh
+      ./terraform.sh
+
+=============== create IAM USER ============
+
+create IAM USER  in ec2  
+create group in iam user ------> select command cli 
+
+copy the access key and secret key 
+
+generate key pair in user .pem key ---> copy the key and paste in the Debian ssh  ---> create new file(mykey) in .ssh
+
+======================= in Debian ============= 
+
+
+        create directory --- inside 
+	main.tf --> past 
+	output.tf --> past
+	variable.tf -->past
+
+================== configuration in Debian -========================
+
+aws configure 
+paste access key 
+        secret key 
+        us-east-1 
+        json 
+        aws configure 
+        terraform init 
+        terraform plan 
+        terraform apply 
+
+======if error occurs ======
+
+	terraform  import aw-security_group allow_ssh sg-w08jsdfjo =------> give the security group  ssh id  in ec2 
+
+== then do =====
+	
+	terraform init,plan,apply 
